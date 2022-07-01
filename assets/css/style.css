@@ -1,0 +1,88 @@
+/* Google Fonts font-family: 'Fascinate', cursive; for h1,
+ font-family: 'Joan', serif; for the rest */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Joan&display=swap');
+
+:root {
+    background-color: rgb(0, 158, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Joan', serif;
+}
+
+/* Home text */
+#home-text {
+    font-size: 5.4rem;
+    font-family: 'Fascinate', cursive;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+/* button and h1 container, will center content */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-coulmn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Home page buttons */
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: radial-gradient(circle, rgba(0,158,255,0.91) 14%, rgba(182,54,180,1) 82%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0 rgba(0, 134, 217, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform:none;
+}
+
+/* font awesome crown in high scores */
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
