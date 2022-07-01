@@ -1,0 +1,47 @@
+body {
+    color: #fff;
+}
+
+/* choice containers */
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(182,54,180);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 134, 217, 0.6);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+/* correct/incorrect style */
+.correct {
+    background: radial-gradient(circle, rgba(0,255,0,1) 14%, rgba(40,255,111,1) 82%);
+}
+
+.incorrect {
+    background: radial-gradient(circle, rgba(255,0,0,1) 14%, rgba(255,40,40,1) 82%);
+}
+
+/* make game page responcive */
+@media screen and (max-width:768px) {
+    .answer-container {
+        min-width: 40rem;
+    }
+}
