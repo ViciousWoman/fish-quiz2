@@ -5,6 +5,7 @@ const choices = Array.from(document.querySelectorAll('choice-text'));
 let currentImage = {}; //Image in guestion 
 let imageCounter = 0; // Will ceep track of the images
 let acceptingAnswers = true;
+let availableImages = [];
 
 // image/choices available
 let imageInQuestion = [
@@ -41,3 +42,9 @@ let imageInQuestion = [
         answer: 3,
     }
 ]
+
+function startQuiz() {
+    imageCounter = 0
+    availableImages = [...imageInQuestion]
+    getNewImage() //function will be declared below
+}
