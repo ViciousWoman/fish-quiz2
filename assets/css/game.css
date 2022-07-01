@@ -30,7 +30,7 @@ body {
     width: 100%;
 }
 
-/* correct/incorrect style */
+/* correct/incorrect style, target with js*/
 .correct {
     background: radial-gradient(circle, rgba(0,255,0,1) 14%, rgba(40,255,111,1) 82%);
 }
